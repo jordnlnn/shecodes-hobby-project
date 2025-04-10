@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navajo Rug Weaving</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 30px;
+        box-sizing: border-box;
+        background: linear-gradient(
+          45deg,
+          rgba(244, 162, 97, 0.9) 0%,
+          rgba(231, 111, 81, 0.9) 100%
+        );
+      }
+
+      .dark-body {
+        background: linear-gradient(0deg, #232323 0%, #1e1e1e 100%);
+        color: #ffffff;
+      }
+
+      .container {
+        background-color: #ffffff;
+        max-width: 700px;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 30px auto;
+      }
+
+      .dark-container {
+        background-color: #353535;
+      }
+
+      h1,
+      h2,
+      footer {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        margin-bottom: 50px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      a {
+        display: block;
+        margin: 20px auto 30px;
+        text-align: center;
+        color: #fdb604;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        border: none;
+        transition: opacity 150ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+
+      .toggle-btn {
+        background-color: #264653;
+        color: #ffffff;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        letter-spacing: 1px;
+      }
+
+      .dark-toggle-btn {
+        background-color: rgba(231, 111, 81, 0.9);
+      }
+
+      .learn-more-btn {
+        background-color: #2a9d8f;
+        color: #ffffff;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        letter-spacing: 1px;
+      }
+
+      .dark-learn-more-btn {
+        background-color: rgba(244, 162, 97, 0.9);
+      }
+
+      img {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      img:hover {
+        filter: contrast(80%);
+        transform: scale(1.02);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        margin: 15px 0px;
+      }
+
+      .grid img {
+        width: 100%;
+        height: 160px;
+        border-radius: 10px;
+        object-fit: fill;
+      }
+
+      p {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      footer {
+        margin: 30px 0 10px 0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="toggle-btn">Dark Mode</button>
+
+    <div class="container">
+      <h1>Navajo Rug Weaving</h1>
+      <h2>A Living Tradition</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/700/original/PXL_20230723_021949143_2.jpg?1744248417"
+        alt="Black, gray, and white Navajo rug laying on a wooden table, artist is myself"
+        class="weaving-intro-img"
+      />
+
+      <div class="grid">
+        <img
+          src="https://ids.si.edu/ids/deliveryService?max_w=800&id=NMAI-393_001_000_S07935"
+          alt="Bertha Stevens (Dine/Navajo) Weaving outside of a wooden hogan, courtesy of the Smithsonian Institute"
+        />
+        <img
+          src="https://ids.si.edu/ids/deliveryService?max_w=800&id=NMNH-02285402"
+          alt="Three Navajo Women, One Weaving Blanket on Vertical Loom, One Carding Wool, Another Spinning Wool with Whorl; Man Wearing Blanket Watching Flock of Sheep in Canyon, courtesy of the Smithsonian Institute"
+        />
+        <img
+          src="https://ids.si.edu/ids/deliveryService?max_w=800&id=ark:/65665/m374845ed6ac51412bb318191fac45acc9"
+          alt="Rug with ceremonial themes, courtesy of the Smithsonian Institute"
+        />
+      </div>
+
+      <p>
+        For centuries, the Navajo people have passed down the sacred art of rug
+        weaving through generations. This intricate craft is more than a way to
+        make textiles — it is a deeply spiritual and cultural expression that
+        tells stories, preserves history, and celebrates identity. Traditional
+        Navajo rugs are known for their geometric patterns, earthy colors, and
+        symbolic meanings.
+        <br />
+        <br />
+        Each design is unique, often reflecting the weaver’s personal journey,
+        the natural landscapes of the American Southwest, and traditional
+        stories passed down through oral tradition. Today, Navajo rug weaving
+        continues to thrive — a resilient form of living art that connects past,
+        present, and future.
+      </p>
+
+      <a href="https://en.wikipedia.org/wiki/Navajo_weaving" target="_blank"
+        >Read more on Wikipedia 📖</a
+      >
+
+      <button class="learn-more-btn">Start Your Weaving Journey</button>
+    </div>
+    <footer>Coded with &hearts; by Jordan Goldtooth</footer>
+    <script>
+      let toggleBtn = document.querySelector(".toggle-btn");
+      let body = document.querySelector("body");
+      let container = document.querySelector(".container");
+      let learnBtn = document.querySelector(".learn-more-btn");
+
+      toggleBtn.addEventListener("click", () => {
+        const isDarkMode = body.classList.toggle("dark-body");
+        container.classList.toggle("dark-container");
+        toggleBtn.classList.toggle("dark-toggle-btn");
+        learnBtn.classList.toggle("dark-learn-more-btn");
+
+        toggleBtn.innerHTML = isDarkMode ? "Light Mode" : "Dark Mode";
+      });
+
+      learnBtn.addEventListener("click", function () {
+        const name = prompt("Yá'át'ééh! What's your name, friend?");
+        if (name) {
+          const email = prompt(
+            `${name}, please share your email so we can send you more weaving stories and resources.`
+          );
+          if (email) {
+            alert(
+              `Ahéhee', ${name}! We'll send you some special resources about Navajo weaving to ${email} soon.`
+            );
+          } else {
+            alert("Email is required so we can reach out with resources.");
+          }
+        } else {
+          alert("Please share your name so we know who we're talking to.");
+        }
+      });
+    </script>
+  </body>
+</html>
